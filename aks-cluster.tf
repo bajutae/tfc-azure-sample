@@ -17,7 +17,7 @@ resource "azurerm_kubernetes_cluster" "default" {
   resource_group_name = var.azurerm_resource_group_name
   dns_prefix          = "${random_pet.prefix.id}-k8s"
 
-  default_node_pool {
+  agent_pool_profile {
     name            = "default"
     count           = 2
     vm_size         = "Standard_D2_v2"
@@ -26,8 +26,8 @@ resource "azurerm_kubernetes_cluster" "default" {
   }
 
   service_principal {
-    client_id     = var.appId
-    client_secret = var.password
+    client_id     = var.client_id
+    client_secret = var.client_secret
   }
 
   role_based_access_control {
