@@ -17,5 +17,5 @@ variable "client_secret" {
     default = "00000000-0000-0000-0000-000000000000"
 }
 variable "agent_count" {
-    default = 3
+    default = 2
 }
