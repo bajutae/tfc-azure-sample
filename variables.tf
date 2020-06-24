@@ -1,13 +1,3 @@
-variable "appId" {
-    type = string
-    default = ""
-}
-
-variable "password" {
-    type = string
-    default = ""
-}
-
 variable "azure_region" {
   type    = string
   default = "koreacentral"
@@ -33,4 +23,7 @@ variable "client_secret" {
 variable "tenant_id" {
     type    = string
     default = "00000000-0000-0000-0000-000000000000"
+}
+variable "agent_count" {
+    default = 3
 }
