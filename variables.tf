@@ -8,22 +8,6 @@ variable "azurerm_resource_group_name" {
     default = "rgrgrgrg"
 }
 
-variable "subscription_id" {
-    type    = string
-    default = "00000000-0000-0000-0000-000000000000"
-}
-variable "client_id" {
-    type    = string
-    default = "00000000-0000-0000-0000-000000000000"
-}
-variable "client_secret" {
-    type    = string
-    default = "00000000-0000-0000-0000-000000000000"
-}
-variable "tenant_id" {
-    type    = string
-    default = "00000000-0000-0000-0000-000000000000"
-}
 variable "agent_count" {
     default = 3
 }
