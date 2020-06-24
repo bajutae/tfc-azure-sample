@@ -15,5 +15,5 @@ variable "azure_region" {
 
 variable "azurerm_resource_group_name" {
     type    = string
-    default = "rg-jtpark5"
+    default = "rgrgrgrg"
 }
